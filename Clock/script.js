@@ -1,31 +1,8 @@
-
-
-const button=document.querySelector('[hi]')
-
-const checkBox=document.querySelector('[syncSwtitch]')
+setInterval(setClock,1000)
 
 const hourHand=document.querySelector('[data-hour-hand]')
 const minuteHand=document.querySelector('[data-minute-hand]')
 const secondHand=document.querySelector('[data-second-hand]')
-
-const s=document.getElementById('switch');
-
-
-
-
-
-
-const cb = document.getElementById('accept');
-if(cb.checked){
-alert(`Key pressed\r\n key code value: `);}
-
-
-
-
-
-
-
-
 
 function setClock(){
     const currentDate=new Date()
@@ -38,14 +15,7 @@ alert(`Key pressed\r\n key code value: `)
     setRotation(minuteHand, minutesRatio)
     setRotation(hourHand, hoursRatio)
 }
-function sync(element){
-    if(element.checked){
-    setClock();}
-    else{setClock();}
-   // setInterval(setClock,1000)
-}
 function setRotation(element,rotationRatio){
     element.style.setProperty('--rotation', rotationRatio * 360)
 }
-
-button.addEventListener("click", setClock);
+setClock();

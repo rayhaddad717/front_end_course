@@ -6,8 +6,6 @@ const secondHand=document.querySelector('[data-second-hand]')
 
 function setClock(){
     const currentDate=new Date()
-    
-alert(`Key pressed\r\n key code value: `)
     const secondsRatio= currentDate.getSeconds() / 60
     const minutesRatio=(secondsRatio + currentDate.getMinutes())/ 60    
     const hoursRatio=(minutesRatio + currentDate.getHours())/12

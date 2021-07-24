@@ -12,9 +12,9 @@
     <body>
         <div class="title">Whats the Time Right Now?</div>
         <button class="updateTime" hi>Update Time</button>
-        <label class="switch" checkBox onclick="sync()">
+        <label class="switch" checkBox >
             <input type="checkbox">
-            <span class="slider round"> Sync Constantly</span>
+            <span class="slider round" onClick="sync(this)" id="switch">  </span>
           </label>
         <div class="clock">
             <div class="hand hour" data-hour-hand></div>
@@ -33,6 +33,9 @@
             <div class="number number11">11</div>
             <div class="number number12">12</div>
         </div>
-
+        <label for="accept">
+            <input type="checkbox" id="accept" name="accept" value="yes">  Accept 
+         </label>
+         
     </body>
 </html>

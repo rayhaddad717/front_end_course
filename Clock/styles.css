@@ -4,7 +4,7 @@
 }
 .title{
     font-size:40px;
-    position:fixed;
+    position:relative;
     top:10%;
     color:rbga(0,0,0,1);
     font-weight: 500;

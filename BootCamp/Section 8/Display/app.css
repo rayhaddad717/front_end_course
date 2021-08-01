@@ -1,0 +1,28 @@
+h1{
+    background-color:turquoise;
+    border:1px solid black;
+    width: 500px;
+    height:200px;
+    padding:20px;
+    margin:100px;
+    /* display:inline;  */
+    display:none;
+}
+span{
+    background-color:palevioletred;
+    border-width:1px;
+    border-color:black;
+    border-style:solid;
+    WIDTH:500PX;   
+    padding:10px;
+    margin:50px;
+}
+div{
+    height:200px;
+    width:200px;
+    background-color:olivedrab;
+    border:5px solid black;
+    display:inline-block;
+    margin:50px;
+
+}

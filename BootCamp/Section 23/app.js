@@ -44,3 +44,18 @@ const myObject = {
 const { name: FN, lastName: LN, age: Age = 5 } = myObject;
 
 const fullName = ({ name, lastName }) => (`${name} - ${lastName}`);
+
+const f1Drivers = ['seb', 'ham', 'nico', 'nor'];
+f1Drivers.forEach(driver => { console.log(driver); });
+const bestDrivers = f1Drivers.map(driver => {
+    if (driver !== 'ham') { return driver; }
+    else { return 'not you'; }
+});
+
+const fun = (p1, p2) => {
+    console.log(p1, p2);
+}
+const isGood = f1Drivers.every((driver) => { return driver !== 'ham'; })
+const result = f1Drivers.reduce((original, current) => {
+    return current + original;
+});
